@@ -1,0 +1,50 @@
+﻿@model codechallenge.Models.tbUserProject
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbUserProject</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FK_UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FK_UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FK_ProjectID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FK_ProjectID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssignedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssignedDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PK_UserProject }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
